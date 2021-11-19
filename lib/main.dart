@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       // Hide the debug banner
       debugShowCheckedModeBanner: false,
 
-      title: 'Assignment',
+      title: 'Assignment1',
       home: MyHomePage(),
     );
   }
