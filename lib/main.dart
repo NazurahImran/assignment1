@@ -57,7 +57,7 @@ if (myController.text== '1'){
           }
   }
 final List<String> myAnimals = ["1. Cats", "2. Dogs", "3. Mouses"];
-final catImage ='image/cat.jpg';
+
  @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -81,9 +81,7 @@ final catImage ='image/cat.jpg';
                       padding: const EdgeInsets.all(10),
                       child: Text(myAnimals[index])),
                 );
-              },
-
-              
+              },     
               ),
           
             ),
@@ -110,11 +108,8 @@ final catImage ='image/cat.jpg';
           // TextEditingController.
           content: Text('You have choose animal no.' + myController.text),
           title :
-          Image.asset(
-           catImage,
+          
          )
-        checkAnimal();
-
         );
       },
     );
@@ -123,29 +118,32 @@ final catImage ='image/cat.jpg';
      child: const Text('Enter'),
         ),
          
-         const Text('Test8'),
+         const Text('Test9'),
         
+        if (myController.text== '1'){
+                  const Text('cat');
+                }
+          
+         else if(myController.text== '2') {
+            const Text('dog');
+         }
+          else if (myController.text== '3'){
+
+            const Text('mouse');
+            }
+            
+            else {
+            const Text('Insert the correct number only');
+          } 
          
-        ],
-                      
+        ],               
                       
                       )
         
         );
 
-             
-
-             
-             
-
+    
              
     }
-        
-        
-        
-    
-    
-  
-  
-  
+         
 }
