@@ -1,4 +1,3 @@
-//original
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -38,7 +37,7 @@ class _MyCustomFormState extends State<MyCustomForm> {
     myController.dispose();
     super.dispose();
   }
-  
+ //this is my idea to display the choosen animal based on user's input 
  checkAnimal(){
 if (myController.text== '1'){
                   const Text('cat');
@@ -118,23 +117,7 @@ final List<String> myAnimals = ["1. Cats", "2. Dogs", "3. Mouses"];
      child: const Text('Enter'),
         ),
          
-         const Text('Test9'),
-        
-        if (myController.text== '1'){
-                  const Text('cat');
-                }
-          
-         else if(myController.text== '2') {
-            const Text('dog');
-         }
-          else if (myController.text== '3'){
-
-            const Text('mouse');
-            }
-            
-            else {
-            const Text('Insert the correct number only');
-          } 
+         const Text('Test7'),
          
         ],               
                       
